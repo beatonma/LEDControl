@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pref="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/onboard_container"
+            style="@style/Card">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/onboard_title"
+                android:text="@string/onboard_general_title"
+                style="@style/ListItemTitle"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/onboard_title"
+                android:id="@+id/onboard_description_1"
+                android:text="@string/onboard_notifications_description1"
+                android:paddingBottom="2dp"
+                style="@style/ListItemDescription"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/onboard_description_1"
+                android:id="@+id/onboard_description_2"
+                android:text="@string/onboard_notifications_description2"
+                style="@style/ListItemDescription"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/onboard_description_2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/ok_button"
+                android:text="@string/generic_understood"
+                style="@style/Button.Flat.Dialog"/>
+        </RelativeLayout>
+
+        <com.beatonma.ledcontrol.app.ui.SwitchPreference
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enable_switch"
+            pref:key="pref_notifications_enable"
+            pref:name="@string/pref_notifications_enable"
+            pref:checked="false"/>
+
+        <com.beatonma.ledcontrol.app.ui.PreferenceSection
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            pref:name="@string/pref_notifications_monitored_apps"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="48dp"
+            android:clipToPadding="false"
+            android:id="@+id/recyclerview"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"
+        style="@android:style/Widget.DeviceDefault.ProgressBar"/>
+</RelativeLayout>

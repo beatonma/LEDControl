@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="48dp"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/overlay"
+        android:background="@color/TextSecondary"
+        android:alpha="0"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:id="@+id/card"
+        style="@style/Card">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Large"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_below="@+id/recyclerview"
+            android:layout_alignLeft="@+id/recyclerview"
+            android:minWidth="@dimen/button_width"
+            android:text="Clear"
+            android:id="@+id/clear_button"
+            style="@style/Button.Flat.Dialog"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_height"
+            android:layout_below="@+id/recyclerview"
+            android:layout_alignRight="@+id/recyclerview"
+            android:minWidth="@dimen/button_width"
+            android:text="OK"
+            android:id="@+id/ok_button"
+            style="@style/Button.Flat.Dialog"/>
+
+    </RelativeLayout>
+</RelativeLayout>

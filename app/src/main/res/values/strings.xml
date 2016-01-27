@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">LED Control</string>
+    <string name="service_ambient">Ambient LED Service</string>
+    <string name="service_notification">LED Notifications</string>
+
+    <string name="tab_color">Colour</string>
+    <string name="tab_general">General</string>
+    <string name="tab_notifications">Notifications</string>
+    <string name="tab_ambient_service">Ambient</string>
+    <string name="tab_help">Help</string>
+    <string-array name="tab_titles">
+        <item>@string/tab_color</item>
+        <item>@string/tab_general</item>
+        <item>@string/tab_notifications</item>
+        <item>@string/tab_ambient_service</item>
+        <item>@string/tab_help</item>
+    </string-array>
+
+    <string name="onboard_general_title">Welcome</string>
+    <string name="onboard_general_description1">This app was built for a specific project involving a Raspberry Pi and LEDs. This app will be useless until you have completed the server part of the project!</string>
+    <string name="onboard_general_description2">If you have completed the necessary server configuration then congratulations! You can go ahead and enter the server address in the form below. Once you have done that the rest of the app will become useful.</string>
+
+    <string name="onboard_notifications_title">Notification pulses</string>
+    <string name="onboard_notifications_description1">Your lights can pulse in different colours when you receive notifications on this device.</string>
+    <string name="onboard_notifications_description2">To get started, enable the option below, enable the service when it pops up at the bottom of the screen, then add any apps you want to monitor using the + button below.</string>
+
+    <!-- General settings -->
+    <string name="pref_remote_address">Server address</string>
+    <string name="pref_remote_address_description">Enter the full address to your post.php file.</string>
+    <string name="pref_interpolate_color_changes">Interpolate colour changes</string>
+    <string name="pref_remote_address_hint">http://IP_ADDRESS/led_control/post.php</string>
+    <string name="pref_interpolate_color_changes_description">Make colours change gradually.</string>
+    <string name="pref_color_change_duration">Color change duration</string>
+    <string name="pref_color_change_duration_description">How long it should take to change from one colour to the next.</string>
+    <string name="pref_max_brightness">Maximum brightness</string>
+    <string name="pref_min_brightness">Minimum brightness</string>
+
+    <!-- Ambient service -->
+    <string name="ambient_service_title">Here be dragons!</string>
+    <string name="ambient_service_description">Highly experimental! The ambient service requires root access to your device, may heavily affect performance/battery life, and sometimes just doesn\'t work(!)\n\nIf you are using Android Marshmallow or above you will be asked to grant access to \'photos, media and files\' on your device. This is because the service works by taking a screenshot then analysing the image file, so it needs access to that file.</string>
+
+    <!-- Notification settings -->
+    <string name="pref_notifications_enable">Enabled</string>
+    <string name="pref_notifications_monitored_apps">Monitored apps</string>
+
+    <string name="system_notification_settings_open">Check now</string>
+    <string name="system_notification_settings_message">Make sure you have enabled the service in system settings!</string>
+
+    <string name="help_title">Something wrong??</string>
+    <string name="help_description">If you have followed the tutorial but something still isn\'t working, you are welcome to contact me for help with troubleshooting.</string>
+
+    <string name="control_brightness">Brightness</string>
+    <string name="control_start_ambient_service">Start service</string>
+    <string name="control_stop_ambient_service">Stop service</string>
+
+    <string name="link_tutorial">Open tutorial</string>
+    <string name="link_tutorial_address">https://beatonma.wordpress.com/2016/01/26/intelligent-lighting/</string>
+    <string name="link_community">G+ Community</string>
+    <string name="link_community_address">https://plus.google.com/u/0/communities/113955537219140914914/stream/e542d6c4-be65-4195-989c-fe0b018e513f</string>
+    <string name="link_email">Email</string>
+    <string name="link_email_address">beatonma+ledcontrol@gmail.com</string>
+    <string name="link_email_subject">LED Control</string>
+
+    <string name="generic_ok">OK</string>
+    <string name="generic_help">Help</string>
+    <string name="generic_understood">I understand</string>
+    <string name="generic_more">More</string>
+
+    <string name="fragtag_applist">fragtag_applist</string>
+    <string name="fragtag_color">fragtag_color</string>
+</resources>

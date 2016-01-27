@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/help_title"
+            style="@style/ListItemTitle"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/help_description"
+            style="@style/ListItemDescription"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_tutorial"
+            android:text="@string/link_tutorial"
+            android:gravity="right|end|center_vertical"
+            style="@style/Button.Flat.Dialog"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_community"
+            android:text="@string/link_community"
+            android:gravity="right|end|center_vertical"
+            style="@style/Button.Flat.Dialog"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_email"
+            android:text="@string/link_email"
+            android:gravity="right|end|center_vertical"
+            style="@style/Button.Flat.Dialog"/>
+    </LinearLayout>
+</ScrollView>

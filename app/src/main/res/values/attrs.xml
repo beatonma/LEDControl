@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="name" format="string|reference"/>
+    <attr name="description" format="reference"/>
+    <attr name="key" format="string"/>
+
+    <declare-styleable name="ListPreference">
+        <attr name="name"/>
+        <attr name="description"/>
+        <attr name="key"/>
+        <attr name="multiselect" format="boolean"/>
+        <attr name="entries" format="reference" />
+        <attr name="entryValues" format="reference" />
+        <attr name="defaultValue" format="integer" />
+        <attr name="defaults" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="Preference">
+        <attr name="name"/>
+        <attr name="description"/>
+        <attr name="key"/>
+        <attr name="default_color" format="integer|reference"/>
+        <attr name="checked" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SeekbarPreference">
+        <attr name="title"/>
+        <attr name="name"/>
+        <attr name="description"/>
+        <attr name="key"/>
+        <attr name="customListener" format="boolean"/>
+        <attr name="max_value" format="integer"/>
+        <attr name="min_value" format="float"/>
+        <attr name="progress" format="integer"/>
+        <attr name="showCenter" format="boolean"/>
+        <attr name="showValue" format="boolean"/>
+        <attr name="float_multiplier" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorSeekbarView">
+        <attr name="text" format="string|reference"/>
+        <attr name="textcolor" format="reference"/>
+        <attr name="channel" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="LoadingView">
+        <attr name="type" format="integer|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="EditTextPreference">
+        <attr name="hint" format="reference"/>
+    </declare-styleable>
+</resources>

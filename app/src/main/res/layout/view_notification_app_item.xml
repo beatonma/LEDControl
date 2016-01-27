@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    style="@style/Card.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/button_color"
+        android:layout_toStartOf="@+id/button_color"
+        android:gravity="center_vertical|left|start"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:ellipsize="end"
+            android:maxLines="1"
+            style="@style/ListItemTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:ellipsize="end"
+            android:maxLines="1"
+            style="@style/ListItemDescription"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/button_color"/>
+
+</RelativeLayout>
